@@ -1,4 +1,4 @@
-package com.arctouch.codechallenge.home
+package com.arctouch.codechallenge.adpters
 
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.arctouch.codechallenge.R
-import com.arctouch.codechallenge.detail.MovieDetailActivity
+import com.arctouch.codechallenge.detail.DetailActivity
 import com.arctouch.codechallenge.model.Movie
 import com.arctouch.codechallenge.util.MovieImageUrlBuilder
 import com.bumptech.glide.Glide
@@ -25,7 +25,7 @@ class HomeAdapter(private val movies: List<Movie>) : RecyclerView.Adapter<HomeAd
             itemView.releaseDateTextView.text = movie.releaseDate
 
             itemView.rowMovieRelativeLayout.setOnClickListener{
-                val i:Intent = Intent(itemView.context , MovieDetailActivity::class.java)
+                val i:Intent = Intent(itemView.context , DetailActivity::class.java)
                 i.putExtra("movieId",movie.id)
                 itemView.context.startActivity(i)
             }
