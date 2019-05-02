@@ -1,5 +1,5 @@
 # UpcomingMoviesApp
-Upcoming Movies Mobile App for Android is part of the code challenge of ARCTOUCH
+Example of android development, App upcoming Movies Mobile for Android
 
 ![](https://raw.githubusercontent.com/cristianodiniz/UpcomingMoviesApp/master/imgs/demo1.gif)
 
